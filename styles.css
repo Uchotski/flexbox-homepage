@@ -90,7 +90,7 @@ nav ul li a:hover {
 /* General styling */
 section {
     width: 100%;
-    padding: 0 10%;
+    padding: 20px 10%;
 }
 
 section:nth-of-type(2n) {
@@ -98,11 +98,67 @@ section:nth-of-type(2n) {
     ;
 }
 
-/* About */
+/* About, Directions */
+
+#about, #directions {
+    position: relative;
+    z-index: 0;
+}
+
+#about::before {
+    content: "";
+    background-image: url('images/stock-images/dog-running.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#directions::before {
+    content: "";
+    background-image: url('images/stock-images/directions.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about .flex-container, #directions .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto;
+    max-width: 80%;
+}
+
+#about .content {
+    margin: 150px auto;
+}
+
+.content h1 {
+    text-align: center;
+}
 
 /* Team */
 
-.flex-container {
+#team .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -145,13 +201,6 @@ section:nth-of-type(2n) {
 
 .card p {
     text-align: justify;
-}
-
-/* Directions */
-
-#directions {
-    background-image: url('./images/stock-images/directions.jpg');
-    background-size: cover;
 }
 
 /* Contact */
