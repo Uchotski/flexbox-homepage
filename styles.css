@@ -157,11 +157,28 @@ section {
     background-color: #c1d486;
 }
 
+.staff-bar {
+    width: 100%;
+    background: #404926;
+    color: #fff;
+    font-family: 'Josefin Sans', serif;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    line-height: 2;
+}
+
+.staff-bar:hover {
+    background: #5b663b;
+}
+
 #team .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px 0;
 }
 
 .card {
