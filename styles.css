@@ -94,7 +94,8 @@ section {
 }
 
 section:nth-of-type(2n) {
-    background-color: #FFCCFF;
+    background-color: #a0b46a;
+    ;
 }
 
 /* About */
@@ -110,11 +111,12 @@ section:nth-of-type(2n) {
 
 .card {
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     background: #fff;
     text-align: center;
-    max-width: 25%;
+    width: 25%;
+    min-width: 300px;
 }
 
 .card h3 {
@@ -123,12 +125,22 @@ section:nth-of-type(2n) {
     margin-bottom: 20px;
 }
 
+.card h3::after {
+    content: ":";
+}
+
 .card img {
     height: 200px;
     max-width: 75%;
+    scale: 1.5;
+    background-color: #999;
     overflow: none;
     object-fit: cover;
     margin: 20px auto;
+}
+
+.card h4.name {
+    font-style: italic;
 }
 
 .card p {
