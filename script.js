@@ -1,0 +1,1 @@
+console.log(document.querySelector('vet-bar'));

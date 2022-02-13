@@ -173,12 +173,19 @@ section {
 }
 
 #team .flex-container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 10px 0;
+}
+
+#vets {
+    display: flex;
+}
+
+#nurses, #reception, #other-staff {
+    display: none;
 }
 
 .card {
@@ -217,10 +224,6 @@ section {
 
 .card p {
     text-align: justify;
-}
-
-#team #nurses, #team #reception, #team #other-staff {
-    display: none;
 }
 
 /* Contact */
