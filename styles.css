@@ -93,11 +93,6 @@ section {
     padding: 20px 10%;
 }
 
-section:nth-of-type(2n) {
-    background-color: #a0b46a;
-    ;
-}
-
 /* About, Directions */
 
 #about, #directions {
@@ -158,6 +153,10 @@ section:nth-of-type(2n) {
 
 /* Team */
 
+#team {
+    background-color: #c1d486;
+}
+
 #team .flex-container {
     display: flex;
     flex-direction: row;
@@ -203,7 +202,7 @@ section:nth-of-type(2n) {
     text-align: justify;
 }
 
-#nurses, #reception, #other-staff {
+#team #nurses, #team #reception, #team #other-staff {
     display: none;
 }
 
