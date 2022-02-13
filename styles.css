@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* UNIVERSAL STYLING */
+html, body {
+    background: #fff;
+    color: #333;
+    font-family: 'Zen Kaku Gothic Antique', Verdana, Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* HEADER */
+
+h1 {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/header/street.jpg');
+    background-size: cover;
+    background-position: 0 70%;
+    background-repeat: no-repeat;
+    transform: scale(1.06);
+    filter: blur(3px);
+    z-index: -1;
+}
+
+header p.slogan {
+    font-style: italic;
+    color: #888;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background: #404926;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style-type: none;
+    line-height: 2;
+}
